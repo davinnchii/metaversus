@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
+import Image from 'next/image';
 
 const ExploreCard = ({
 	id,
@@ -17,7 +18,7 @@ const ExploreCard = ({
 		flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
 		onClick={() => handleClick(id)}
 	>
-		<img
+		<Image
 			src={imgUrl}
 			alt={title}
 			className="absolute w-full h-full object-cover rounded-[24px]"
@@ -31,7 +32,7 @@ const ExploreCard = ({
 			<div className="absolute bottom-0 p-8 justify-start w-full flex-col
 			bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
 				<div className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}>
-					<img
+					<Image
 						src='/headset.svg'
 						alt="headset"
 						className="w-1/2 h-1/2 object-contain"
