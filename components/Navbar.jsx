@@ -16,7 +16,9 @@ const Navbar = () => (
 			<Image
 				src="/search.svg"
 				alt="search"
-				className="w-[24px] h-[24px] object-contain"
+				width={24}
+				height={24}
+				className="object-contain"
 			/>
 			<h2 className="font-extrabold text-[24px] leading-[30px] text-white">
 				METAVERSUS
@@ -24,7 +26,9 @@ const Navbar = () => (
 			<Image
 				src="/menu.svg"
 				alt="menu"
-				className="w-[24px] h-[24px] object-contain"
+				width={24}
+				height={24}
+				className="object-contain"
 			/>
 		</div>
 	</motion.nav>

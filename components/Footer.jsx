@@ -24,7 +24,9 @@ const Footer = () => (
 					<Image
 						src="/headset.svg"
 						alt="headset"
-						className="w-[24px] h-[24px] object-contain"
+						width={24}
+						height={24}
+						className="object-contain"
 					/>
 					<span className="font-normal text-[16px] text-white">ENTER METAVERSE</span>
 				</button>
@@ -38,12 +40,16 @@ const Footer = () => (
 						reserved.</p>
 					<div className="flex gap-4">
 						{socials.map(social => (
-							<Image
-								key={social.name}
-								src={social.url}
-								alt={social.name}
-								className="w-[24px] h-[24px] object-contain cursor-pointer"
-							/>
+							<a href={social.link}>
+								<Image
+									key={social.name}
+									src={social.url}
+									alt={social.name}
+									width={24}
+									height={24}
+									className="object-contain cursor-pointer"
+								/>
+							</a>
 						))}
 					</div>
 				</div>

@@ -21,7 +21,8 @@ const ExploreCard = ({
 		<Image
 			src={imgUrl}
 			alt={title}
-			className="absolute w-full h-full object-cover rounded-[24px]"
+			fill
+			className="absolute object-cover rounded-[24px]"
 		/>
 		{active !== id ? (
 			<h3 className="font-semibold sm:text-[26px] text-[18px]
@@ -32,11 +33,14 @@ const ExploreCard = ({
 			<div className="absolute bottom-0 p-8 justify-start w-full flex-col
 			bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
 				<div className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}>
-					<Image
-						src='/headset.svg'
-						alt="headset"
-						className="w-1/2 h-1/2 object-contain"
-					/>
+					<div className="w-1/2 h-1/2">
+						<Image
+							src='/headset.svg'
+							alt="headset"
+							fill
+							className="object-contain"
+						/>
+					</div>
 				</div>
 				<p className="font-normal text-[16px] leading-[20px] text-white uppercase">
 					Enter the Metaverse

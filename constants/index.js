@@ -72,17 +72,21 @@ export const socials = [
   {
     name: 'twitter',
     url: '/twitter.svg',
+    link: '/'
   },
   {
     name: 'linkedin',
     url: '/linkedin.svg',
+    link: 'https://www.linkedin.com/in/ivan-zayko-8a6914292/'
   },
   {
-    name: 'instagram',
-    url: '/instagram.svg',
+    name: 'mail',
+    url: '/mail.svg',
+    link: 'mailto:ivan.zayko.dev@gmail.com'
   },
   {
-    name: 'facebook',
-    url: '/facebook.svg',
+    name: 'telegram',
+    url: '/telegram.svg',
+    link: 'https://t.me/davinnchii'
   },
 ];
