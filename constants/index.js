@@ -70,9 +70,9 @@ export const insights = [
 
 export const socials = [
   {
-    name: 'twitter',
-    url: '/twitter.svg',
-    link: '/'
+    name: 'github',
+    url: '/github.svg',
+    link: 'https://github.com/davinnchii'
   },
   {
     name: 'linkedin',
