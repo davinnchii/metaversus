@@ -87,6 +87,6 @@ export const socials = [
   {
     name: 'telegram',
     url: '/telegram.svg',
-    link: 'https://t.me/davinnchii'
+    link: '/'
   },
 ];
