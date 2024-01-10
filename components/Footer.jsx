@@ -40,9 +40,11 @@ const Footer = () => (
 						reserved.</p>
 					<div className="flex gap-4">
 						{socials.map(social => (
-							<a href={social.link}>
+							<a
+								key={social.name}
+								href={social.link}
+							>
 								<Image
-									key={social.name}
 									src={social.url}
 									alt={social.name}
 									width={24}
