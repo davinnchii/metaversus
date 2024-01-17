@@ -10,7 +10,7 @@ const Feedback = () => (
 			variants={staggerContainer}
 			initial="hidden"
 			whileInView="show"
-			viewport={{ once: false, amount: 0.25 }}
+			viewport={{ once: true, amount: 0.25 }}
 			className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
 		>
 			<motion.div
@@ -28,7 +28,7 @@ const Feedback = () => (
 					</p>
 				</div>
 				<p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white">
-					“With the development of today's technology, metaverse is very useful for today's work, or can be called web
+					“With the development of today&apos;s technology, metaverse is very useful for today&apos;s work, or can be called web
 					3.0. by using metaverse you can use it as anything”
 				</p>
 			</motion.div>
